@@ -16,5 +16,11 @@
     </li>
   <% end %>
 </ul>
+
+<form action="/participants" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="text" name="person_to_destroy">
+  <input type="submit" value="Delete that sucka">
+</form>
 </body>
 </html>
