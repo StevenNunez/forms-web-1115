@@ -7,7 +7,13 @@
 <body>
   <ul>
   <% @participants.each do |participant| %>
-    <li><%= participant[:name] %> wants <%= participant[:gifts] %></li>
+    <li><%= participant[:name] %> wants
+      <ul>
+        <% participant[:gifts].each do |gift| %>
+          <li><%= gift %></li>
+        <% end %>
+      </ul>
+    </li>
   <% end %>
 </ul>
 </body>
