@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+  <% @participants.each do |participant| %>
+    <li><%= participant[:name] %> wants <%= participant[:gifts] %></li>
+  <% end %>
+</ul>
+</body>
+</html>
